@@ -1,0 +1,52 @@
+header {
+    width: 100vw;
+    height: fit-content;
+    display: grid;
+    grid-row: 1fr 1fr;
+
+    .header-social-icons-section {
+        width: 100%;
+        height: fit-content;
+        background-color: $primary-color;
+        padding: 10px 50px;
+        display: flex;
+        justify-content: flex-end;
+
+        .icons a {
+            margin-left: 40px;
+
+            img {
+                width: 30px;
+            }
+        }
+    }
+
+    nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: fit-content;
+        padding: 10px 90px;
+        align-items: center;
+
+        .nav-logo-section {
+            a { 
+                font-size: 2.7rem;
+
+                span {
+                    color: $secondary-color;
+                }
+            }
+
+        }
+
+        .nav-about-me-section {
+            display: flex;
+            justify-content: flex-end;
+
+            a {
+                font-size: 2rem;
+                color: $secondary-color;
+            }
+        }
+    }
+}

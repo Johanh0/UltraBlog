@@ -1,0 +1,34 @@
+main {
+    width: 100%;
+    height: 100%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/cover.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+
+    .hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+
+        & h1 {
+            color: white;
+            font-size: 5rem;
+            margin-bottom: 40px;
+
+            span {
+                color: $secondary-color;
+            }
+        }
+
+        & button {
+            @include button-primary;
+
+            &:hover {
+                @include button-primary_hover;
+            }
+        }
+    }
+}

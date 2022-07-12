@@ -1,0 +1,11 @@
+{
+  "name": "blog-platzi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss -o css --recusrive"
+  },
+  "author": "Johan Herrera",
+  "license": "ISC"
+}
