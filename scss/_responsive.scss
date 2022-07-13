@@ -1,0 +1,22 @@
+@media screen and (max-width: 490px) {
+    header {
+        & .header-social-icons-section {
+            justify-content: center;
+            padding: 10px;
+        }
+        .header-social-icons-section .icons a img{
+            width: 20px;
+        }
+        
+        nav {
+            max-width: 445px;
+            padding: 10px;
+        }
+    }
+
+    .body-for-principal-page {
+        main .hero h1 {
+            font-size: 3rem;
+        }
+    }
+}

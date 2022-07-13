@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss -o css --recusrive"
+    "sass": "node-sass -w scss/blogs-style  -o css --recusrive"
   },
   "author": "Johan Herrera",
   "license": "ISC"

@@ -1,0 +1,51 @@
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px 100px;
+    background-color: #E3E7ED;
+    width: 100vw;
+    height: fit-content;
+    align-items: center;
+
+    .hero-left-side {
+
+        p {
+            font-size: 2.5rem;
+            // font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        img {
+            width: 550px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: 1s ease-in-out;
+
+            &:hover {
+                transform: scale(1.03);
+                transition: 1s ease-in-out;
+            }
+        }
+    }
+
+    .hero-right-side {
+        h1 {
+            font-size: 5rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            max-width: 500px;
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+        }
+
+        button {
+            @include button-primary;
+
+            &:hover {
+                @include button-primary_hover;
+            }
+        }
+    }
+}
