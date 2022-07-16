@@ -1,5 +1,6 @@
 .articles-section {
-    margin: 55px;
+    margin: 55px 0px;
+    width: 100%;
 
     h2 {
         font-size:  3rem;
@@ -14,15 +15,17 @@
     .article-section_flex {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
-        margin: 25px;
+        max-width: 1500px;
+        justify-content: center;
+        align-items: center;
+        margin: 25px auto;
         border-top: 1px solid $secondary-color;
         padding-top: 20px;
 
         .post-container {
             width: 400px;
             height: fit-content;
-            margin: 30px 0;
+            margin: 30px;
 
             img {
                 width: 100%;

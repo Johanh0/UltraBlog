@@ -1,0 +1,46 @@
+.newsLetter-section {
+    width: 100%;
+    text-align: center;
+    padding: 55px;
+
+    .newsLetter-txt {
+
+        h2 {
+            font-size: 3rem;
+            font-weight: lighter;
+            margin-bottom: 20px;
+        
+            span {
+                color: $secondary-color;
+            }
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin-bottom: 50px;
+        }
+    }
+
+    .newsLetter-form {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        max-width: 1000px;
+        border-radius: 20px;
+        padding: 5px;
+        margin: 0 auto;
+        border: 1px solid $primary-color;
+        
+        input {
+            border: none;
+            width: 100%;
+            font-size: 1.5rem;
+            outline:none;
+            text-align: center
+        }
+
+        button {
+            @include button-send;
+        }
+    }
+}

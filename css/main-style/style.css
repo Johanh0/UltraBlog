@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,700&display=swap");
+.primary-button {
+  padding: 0.8em 1.8em;
+  border: 2px solid #EE9B00;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: .3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #EE9B00;
+  cursor: pointer; }
+  .primary-button::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #EE9B00;
+    transition: .5s ease;
+    display: block;
+    z-index: -1; }
+  .primary-button:hover::before {
+    width: 105%; }
+  .primary-button:hover {
+    color: #111; }
+
+button:hover span {
+  transform: translateX(5em); }
+
+button:active {
+  transform: scale(0.95); }
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em); }
+  to {
+    transform: translateY(-0.1em); } }
+
+footer {
+  width: 100vw;
+  height: fit-content;
+  text-align: center;
+  padding: 25px 0;
+  color: white;
+  background-color: #1C1B22;
+  font-size: 1.5rem;
+  border-top: 20px solid #EE9B00; }
+  footer p span {
+    color: #EE9B00; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%;
+  font-family: 'Poppins', sans-serif; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+.body-for-principal-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; }
+
+header {
+  width: 100%;
+  height: fit-content;
+  display: grid;
+  grid-row: 1fr 1fr; }
+  header .header-social-icons-section {
+    width: 100%;
+    height: fit-content;
+    background-color: #1C1B22;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: flex-end; }
+    header .header-social-icons-section .icons a {
+      margin-left: 40px; }
+      header .header-social-icons-section .icons a img {
+        width: 30px; }
+  header nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: fit-content;
+    padding: 10px 90px;
+    align-items: center;
+    height: fit-content;
+    background-color: white; }
+    header nav .nav-logo-section a {
+      font-size: 2.7rem; }
+      header nav .nav-logo-section a span {
+        color: #EE9B00; }
+    header nav .nav-about-me-section {
+      display: flex;
+      justify-content: flex-end; }
+      header nav .nav-about-me-section a {
+        font-size: 2rem;
+        color: #EE9B00; }
+
+main {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/img/cover.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center; }
+  main .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%; }
+    main .hero h1 {
+      color: white;
+      font-size: 5rem;
+      margin-bottom: 40px; }
+      main .hero h1 span {
+        color: #EE9B00; }
+
+@media screen and (max-width: 490px) {
+  header .header-social-icons-section {
+    justify-content: center;
+    padding: 10px; }
+  header .header-social-icons-section .icons a img {
+    width: 20px; }
+  header nav {
+    max-width: 445px;
+    padding: 10px; }
+  .body-for-principal-page main .hero h1 {
+    font-size: 3rem; } }
