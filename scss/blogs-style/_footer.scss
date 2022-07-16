@@ -1,0 +1,16 @@
+footer {
+    width: 100vw;
+    height: fit-content;
+    text-align: center;
+    padding: 25px;
+    color: white;
+    background-color: $primary-color;
+    font-size: 2rem;
+    border-top: 20px solid $secondary-color;
+
+    p {
+        span {
+            color: $secondary-color;
+        }
+    }
+}

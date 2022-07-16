@@ -1,0 +1,23 @@
+@media screen and (max-width: 1335px) {
+    .hero {
+
+        .hero-left-side {
+            min-width: 300px;
+            margin-bottom: 25px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .hero-right-side {
+            text-align: center;
+
+            h1 {
+                font-size: 3.5rem;
+                text-align: center;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

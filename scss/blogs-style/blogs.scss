@@ -1,6 +1,9 @@
-@import '../mixin';
-@import '../var';
-@import '../general';
-@import '../header';
+@import '../main-style/var';
+@import '../main-style/mixin';
+@import '../main-style/general';
+@import '../main-style/header';
 @import './heroBlogs';
-@import '../responsive';
+@import './articles';
+@import './footer';
+@import './responsiveBlogs';
+@import '../main-style/responsive';

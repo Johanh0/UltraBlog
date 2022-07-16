@@ -22,13 +22,5 @@ main {
                 color: $secondary-color;
             }
         }
-
-        & button {
-            @include button-primary;
-
-            &:hover {
-                @include button-primary_hover;
-            }
-        }
     }
 }

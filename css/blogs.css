@@ -1,4 +1,47 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,700&display=swap");
+.primary-button {
+  padding: 0.8em 1.8em;
+  border: 2px solid #EE9B00;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: .3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #EE9B00;
+  cursor: pointer; }
+  .primary-button::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #EE9B00;
+    transition: .5s ease;
+    display: block;
+    z-index: -1; }
+  .primary-button:hover::before {
+    width: 105%; }
+  .primary-button:hover {
+    color: #111; }
+
+footer {
+  width: 100vw;
+  height: fit-content;
+  text-align: center;
+  padding: 25px 0;
+  color: white;
+  background-color: #1C1B22;
+  font-size: 1.5rem;
+  border-top: 20px solid #EE9B00; }
+  footer p span {
+    color: #EE9B00; }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -33,7 +76,9 @@ header {
     grid-template-columns: 1fr 1fr;
     height: fit-content;
     padding: 10px 90px;
-    align-items: center; }
+    align-items: center;
+    height: fit-content;
+    background-color: white; }
     header nav .nav-logo-section a {
       font-size: 2.7rem; }
       header nav .nav-logo-section a span {
@@ -46,8 +91,9 @@ header {
         color: #EE9B00; }
 
 .hero {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
   padding: 50px 100px;
   background-color: #E3E7ED;
   width: 100vw;
@@ -58,7 +104,7 @@ header {
     margin-bottom: 10px; }
   .hero .hero-left-side img {
     width: 550px;
-    border-radius: 25px;
+    border-radius: 35px;
     cursor: pointer;
     transition: 1s ease-in-out; }
     .hero .hero-left-side img:hover {
@@ -71,20 +117,76 @@ header {
     max-width: 500px;
     font-size: 1.6rem;
     margin-bottom: 20px; }
-  .hero .hero-right-side button {
-    width: 150px;
-    height: 50px;
-    color: #EE9B00;
-    background-color: transparent;
-    border: 3px solid #EE9B00;
-    border-radius: 20px;
-    font-size: 1.5rem;
-    cursor: pointer; }
-    .hero .hero-right-side button:hover {
-      color: white;
-      font-size: 2rem;
-      transition: 1s ease-in-out;
-      background-color: #EE9B00; }
+
+.articles-section {
+  margin: 55px; }
+  .articles-section h2 {
+    font-size: 3rem;
+    font-weight: lighter;
+    text-align: center; }
+    .articles-section h2 span {
+      color: #EE9B00; }
+  .articles-section .article-section_flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 25px;
+    border-top: 1px solid #EE9B00;
+    padding-top: 20px; }
+    .articles-section .article-section_flex .post-container {
+      width: 400px;
+      height: fit-content;
+      margin: 30px 0; }
+      .articles-section .article-section_flex .post-container img {
+        width: 100%;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: 1s ease-in-out; }
+        .articles-section .article-section_flex .post-container img:hover {
+          transform: scale(1.03);
+          transition: 1s ease-in-out; }
+      .articles-section .article-section_flex .post-container .post-container_title {
+        margin: 20px 0;
+        font-size: 2rem;
+        color: #EE9B00; }
+      .articles-section .article-section_flex .post-container .post-container_txt {
+        font-size: 1.5rem;
+        margin-bottom: 40px;
+        color: #1C1B22; }
+      .articles-section .article-section_flex .post-container .button-article {
+        letter-spacing: 2px;
+        font-size: 1.2rem;
+        color: #1C1B22;
+        background-color: #EE9B00;
+        border-radius: 25px;
+        padding: 12px 20px; }
+        .articles-section .article-section_flex .post-container .button-article:hover {
+          background-color: #ee9b00d7; }
+
+footer {
+  width: 100vw;
+  height: fit-content;
+  text-align: center;
+  padding: 25px;
+  color: white;
+  background-color: #1C1B22;
+  font-size: 2rem;
+  border-top: 20px solid #EE9B00; }
+  footer p span {
+    color: #EE9B00; }
+
+@media screen and (max-width: 1335px) {
+  .hero .hero-left-side {
+    min-width: 300px;
+    margin-bottom: 25px; }
+    .hero .hero-left-side img {
+      width: 100%; }
+  .hero .hero-right-side {
+    text-align: center; }
+    .hero .hero-right-side h1 {
+      font-size: 3.5rem;
+      text-align: center;
+      text-transform: uppercase; } }
 
 @media screen and (max-width: 490px) {
   header .header-social-icons-section {

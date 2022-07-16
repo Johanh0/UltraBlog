@@ -1,4 +1,47 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,700&display=swap");
+.primary-button {
+  padding: 0.8em 1.8em;
+  border: 2px solid #EE9B00;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: .3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #EE9B00;
+  cursor: pointer; }
+  .primary-button:before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #EE9B00;
+    transition: .5s ease;
+    display: block;
+    z-index: -1; }
+  .primary-button:hover::before {
+    width: 105%; }
+  .primary-button:hover {
+    color: #111; }
+
+footer {
+  width: 100vw;
+  height: fit-content;
+  text-align: center;
+  padding: 25px 0;
+  color: white;
+  background-color: #1C1B22;
+  font-size: 1.5rem;
+  border-top: 20px solid #EE9B00; }
+  footer p span {
+    color: #EE9B00; }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -38,7 +81,9 @@ header {
     grid-template-columns: 1fr 1fr;
     height: fit-content;
     padding: 10px 90px;
-    align-items: center; }
+    align-items: center;
+    height: fit-content;
+    background-color: white; }
     header nav .nav-logo-section a {
       font-size: 2.7rem; }
       header nav .nav-logo-section a span {
@@ -69,20 +114,6 @@ main {
       margin-bottom: 40px; }
       main .hero h1 span {
         color: #EE9B00; }
-    main .hero button {
-      width: 150px;
-      height: 50px;
-      color: #EE9B00;
-      background-color: transparent;
-      border: 3px solid #EE9B00;
-      border-radius: 20px;
-      font-size: 1.5rem;
-      cursor: pointer; }
-      main .hero button:hover {
-        color: white;
-        font-size: 2rem;
-        transition: 1s ease-in-out;
-        background-color: #EE9B00; }
 
 @media screen and (max-width: 490px) {
   header .header-social-icons-section {

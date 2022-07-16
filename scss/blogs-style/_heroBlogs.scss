@@ -1,6 +1,7 @@
 .hero {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
     padding: 50px 100px;
     background-color: #E3E7ED;
     width: 100vw;
@@ -17,7 +18,7 @@
 
         img {
             width: 550px;
-            border-radius: 25px;
+            border-radius: 35px;
             cursor: pointer;
             transition: 1s ease-in-out;
 
@@ -39,13 +40,5 @@
             font-size: 1.6rem;
             margin-bottom: 20px;
         }
-
-        button {
-            @include button-primary;
-
-            &:hover {
-                @include button-primary_hover;
-            }
-        }
     }
-}
+} 

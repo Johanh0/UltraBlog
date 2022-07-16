@@ -1,0 +1,86 @@
+// PRIMARY BUTTON STYLE
+
+@mixin button-primary{
+    padding: 0.8em 1.8em;
+    border: 2px solid $secondary-color;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: $secondary-color;
+    cursor: pointer;
+
+    &::before {
+        content: '';
+        width: 0;
+        height: 300%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+        background: $secondary-color;
+        transition: .5s ease;
+        display: block;
+        z-index: -1; 
+    }
+
+    &:hover::before {
+        width: 105%;
+    }
+
+    &:hover {
+        color: #111;
+    }
+}
+
+.primary-button {
+    @include button-primary;
+}
+
+
+// BUTTON ARTICLE
+
+@mixin button-article {
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    color: $primary-color;
+    background-color: $secondary-color;
+    border-radius: 25px;
+    padding: 12px 20px;
+
+    &:hover {
+        background-color: #ee9b00d7;
+    }
+}
+
+// FOOTER
+
+@mixin footer-style {
+        width: 100vw;
+        height: fit-content;
+        text-align: center;
+        padding: 25px 0;
+        color: white;
+        background-color: $primary-color;
+        font-size: 1.5rem;
+        border-top: 20px solid $secondary-color;
+}
+
+@mixin footer_p {
+    color: $secondary-color;
+}
+
+footer {
+    @include footer-style;
+
+    p {
+        span {
+           @include footer_p;
+        }
+    }
+}
